@@ -3,3 +3,62 @@ article, section {
     margin: 10px 20px;
     padding: 20px 10px;
 }
+
+@media screen {
+    body {
+        background-color: red;
+    }
+}
+
+@media print {
+    body {
+        background-color: white;
+        font-size: 2em;
+    }
+}
+
+/*Screen readers can turn off visual adds for instance*/
+@media speech {
+    section {
+        display: none;
+    }
+}
+
+@media (min-width: 500px) {
+    nav {
+        font-size: 2em;
+    }
+}
+
+@media (min-height: 500px) {
+    nav {
+        font-style: italic;
+    }
+}
+
+@media (max-width: 500px) {
+    nav {
+        background-color: white;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 1000px) {
+    header {
+        font-size: larger;
+        color: white;
+    }
+}
+
+/*Comma is the OR operator in CSS*/
+@media (min-width: 1000px), (max-width: 500px) {
+    footer {
+        font-weight: bold;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 500px) {
+    article {
+        color: white;
+        font-style: italic;
+    }
+}
