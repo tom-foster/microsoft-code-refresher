@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>HTML Page</title>
+    </head>
+    <body>
+        <header>
+            <h1>Article Title</h1>
+        </header>
+        <h2>Enter these codes in the console to see examples of how to manage the dom</h2>
+        <code>
+            document.title; <br>
+document.title = "Demo Page";<br>
+document.scripts;<br>
+document.URL;<br>
+document.links;<br>
+document.links[0];<br>
+document.links[0].href = "http://www.microsoft.com/learning";<br>
+document.links[0].target = "_blank";<br>
+document.head;<br>
+document.body;<br>
+document.getElementsByTagName('footer');<br>
+document.getElementsByTagName('footer')[0];<br>
+document.getElementsByTagName('footer')[0].innerHTML = "Demo Footer";<br>
+document.getElementsByTagName('article');<br>
+document.getElementsByClassName('demoClass');<br>
+document.getElementById('testNav');<br>
+        </code>
+        <nav id="testNav">
+            <ul>
+                <li><a href="http://www.microsoft.com">Microsoft</a></li>
+                <li><a href="http://www.edx.org">edX</a></li>
+            </ul>
+        </nav>
+        <article class="demoClass">
+            Lorem Ipsum...
+        </article>
+        <article>
+            Lorem Ipsum...
+        </article>
+        <footer>
+            Copyright information
+        </footer>
+    </body>
+</html>
