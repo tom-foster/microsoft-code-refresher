@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+    <header class="demo"></header>
+    <h1>code to enter in console</h1>
+    <code>
+        $('*').length; //get the length of all elements <br>
+        $('*:empty').length; //get the length of all empty elements <br>
+        $('p').length; //get the length of all paragraph elements <br>
+        $('.blugBg').length //get the length of everything with the blugBg class <br>
+        $('.redBg').length //get the length of everything with the redBg class <br>
+        $('article.redBg').length //get the length of all articles with the class redBg<br>
+        $('#test1').length //get the length of elements with the ID of test1 (should only be 1)<br>
+        $('article[name=topFirst]').length //get the length of articles with the name attribute<br>
+        $('article[name!=top]').length //get the length of articles with the name attribute that is not top<br>
+        $('article[name^=top]').length //get the length of articles with the name attribute that starts with top<br>
+        $('article[name^=bottom]').length //get the length of articles with the name attribute that starts with bottom<br>
+        $('article[name$=Second]').length //get the length of articles with the name attribute that ends with Second<br>
+        $('footer > p').length // get the length of all p elements that are direct descendents of footer
+        $('article[class]').length //get the length of all elements that have a class attribute
+        $('article[id]').length //get the length of all elements that have an id element 
+    </code>
+    <article name="topFirst" class="blueBg" id="test1">
+        Lorem Ipsum...
+    </article>
+    <article name="topSecond">
+        Lorem Ipsum...
+    </article>
+    <article name="bottomFirst" class="blueBg">
+        3rd
+    </article>
+    <article name="bottomSecond" class="redBg">
+        4th
+    </article>
+    <footer class="redBg">
+        <p>Test</p>
+        <p></p>
+    </footer>
+</body>
+</html>
