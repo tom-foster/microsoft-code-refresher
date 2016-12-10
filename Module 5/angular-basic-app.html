@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular Basic App</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>
+    <script src="js/angular-basic-app.js"></script>
+</head>
+<body ng-app="basicApp">
+    <div ng-controller="homeController">
+        <label for="">Username:</label>
+        <input type="input" ng-model="uname" placeholder="Enter username">
+        <hr>
+        <h2>Hello {{uname}}</h2>
+        <button type="button" ng-click="testMe()">Test me!</button>
+    </div>
+</body>
+</html>
