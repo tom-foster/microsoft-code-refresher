@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="listApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular To-do list</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>
+    <script src="js/angular-to-do-list.js"></script>
+</head>
+<body ng-controller="listController">
+    <h1>List of items</h1>
+    <hr>
+    <ol>
+        <li ng-repeat="item in items">
+            {{item}}
+        </li>
+    </ol>
+    <hr>
+    <!--If you use shorthand and keep an empty action in the code won't work you get a weird bug-->
+    <form>
+        <fieldset>
+            <legend>Add New Item</legend>
+            <input type="text" placeholder="Item Text" ng-model="newItem">
+            <button ng-click="addItem()">&#43;</button>
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,21 @@
+
+// Visual Code doesn't support multiple tasks yet'
+// {
+
+//     "version": "0.1.0",
+//     "command": "tsc",
+//     "isShellCommand": true,
+//     "showOutput": "silent",
+//     "args": ["Module 5/ts/script.ts"],
+//     "problemMatcher": "$tsc"
+   
+// }
+
+{
+    "version": "0.1.0",
+    "command": "node-sass",
+    "isShellCommand": true,
+    "args": ["Module 5/sass/style.scss", "Module 5/sass/style.css"]
+}
+
+
